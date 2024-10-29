@@ -1,12 +1,20 @@
+// src/Home.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
-const Home = () => {
-    return (
-        <div>
-            <h1>Home Page</h1>
-            <p>Welcome to the Home Page!</p>
-        </div>
-    );
-};
+function Home() {
+  return (
+    <div>
+      <Helmet>
+        <meta name="msvalidate.01" content="C9FD1D91330EE896AC7D11D096292318" />
+        <title>Your Home Page Title</title>
+        {/* 其他头部标签可以在这里添加 */}
+      </Helmet>
+      <h1>Welcome to the Home Page</h1>
+      {/* 主页内容 */}
+    </div>
+  );
+}
 
 export default Home;
+
